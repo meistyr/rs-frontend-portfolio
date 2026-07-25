@@ -1,0 +1,32 @@
+networks:
+  default:
+    ipam:
+      driver: default
+    external: ${DOCKER_IS_EXTERNAL}
+    name: ${DOCKER_NETWORK_NAME}
+
+volumes:
+  node_modules:
+  nuxt_build:
+
+services:
+  web-app:
+    build:
+      context: ..
+      dockerfile: ./docker-files/Dockerfile
+      args:
+        NODE_VERSION: ${NODE_VERSION:-lts-alpine}
+        APP_PORT: ${APP_PORT:-3000}
+        APP_ENV: ${APP_ENV:-development}
+    image: "${APP_NAME:-royalty-series}:${TAG:-latest}"
+    command: sh -c "find .nuxt -mindepth 1 -maxdepth 1 -exec rm -rf {} + && npm run dev"
+    ports:
+      - "${HOST_PORT:-3000}:${APP_PORT:-3000}"
+    volumes:
+      - ../:/src/app
+      - node_modules:/src/app/node_modules/
+      - nuxt_build:/src/app/.nuxt
+    env_file:
+      - ../.env
+    networks:
+      - default
