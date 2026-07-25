@@ -1,0 +1,49 @@
+Copyright (c) 2022-2026 Luke Ericksen. All rights reserved.
+
+This repository is published as a portfolio archive, for the purpose of reading
+and evaluating the author's work. It is source-available, not open source.
+
+No license or right is granted to use, copy, modify, merge, publish, distribute,
+sublicense, create derivative works from, or sell any part of this software,
+whether in source or compiled form, except as follows:
+
+  1. You may view and read the source code.
+  2. You may clone the repository and run it locally for the sole purpose of
+     evaluating the author's work.
+
+Any other use requires prior written permission from the copyright holder.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHOR OR
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN
+AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+THIRD-PARTY COMPONENTS
+----------------------
+
+The terms above apply only to the author's own work. Several components in this
+repository are owned by others and remain under their own licenses, which are
+unaffected by and take precedence over this file:
+
+  assets/fonts/anton/
+  assets/fonts/chakra-petch/
+  assets/fonts/saira/
+  assets/fonts/teko/
+      Licensed under the SIL Open Font License, Version 1.1. The chakra-petch,
+      saira and teko directories each contain their own license file; Anton's
+      grant is embedded in the font itself.
+
+  Dependencies installed from npm
+      Retain the licenses declared in their respective packages. They are not
+      redistributed here; see package.json.
+
+  server/data/ and public/img/frozen/
+      A snapshot of Royalty Series league data and imagery: team names, player
+      handles, competitive records, and team and sponsor logos. Team and
+      sponsor marks remain the property of their respective owners and are
+      reproduced here only as an archival record of the league as it operated.
+      Rocket League is a trademark of Psyonix LLC; this project is not
+      affiliated with, endorsed by, or sponsored by Psyonix or Epic Games.
